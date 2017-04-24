@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
 //К╟■Й©■КЁ╢Л·░
+//аж╪╝©╛╫ю
 @ControllerAdvice
 public class CommonExceptionAdvice {
 
