@@ -26,6 +26,14 @@ public class BoardDAOimpl implements BoardDAO {
 	}
 
 	@Override
+	public int countPaging(Criteria cri) throws Exception {
+		
+		
+		
+		return session.selectOne(namespace+".countPaging",cri);
+	}
+
+	@Override
 	public BoardVO read(int bno) throws Exception {
 		
 		return session.selectOne(namespace+".read",bno);

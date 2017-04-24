@@ -11,8 +11,16 @@ import org.zerock.persistence.BoardDAO;
 @Service
 public class BoardServiceImpl implements BoardService {
 
+
 	@Autowired
-	private BoardDAO dao; 
+	private BoardDAO dao;
+	
+	
+	@Override
+	public int listCountCriteria(Criteria cri) throws Exception {
+		
+		return dao.countPaging(cri);
+	}
 	
 	
 	@Override
